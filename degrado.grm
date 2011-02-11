@@ -1,0 +1,19 @@
+I ::= "title:   Degrado morale\n"
+    ^ "author:  mcastellini\n"
+    ^ "status:  alpha\n"
+    ^ "topic:   misc\n"
+    ^ "comment: un po' di degrado non fa male a nessuno\n"
+;
+
+S ::= (Causa Verbo).(+S|--P) Segno del degrado Tipo dell'\^italia ;
+
+Causa ::=
+    S: >("La forza gravitazionale" | "Il buco nell'ozono" | "Facebook" | "Il fatto che qui una volta fosse tutta campagna" | "Bilvio Serlusconi" | "Il Duomo di Milano") |
+    P: >("Le scie chimiche" | "Le cacche dei cani" )
+;
+
+Verbo ::= S: e' | P: sono;
+
+Segno ::= segno | indicazione | segnale | presagio | indizio | avvisaglia | la cifra | la misura  ;
+
+Tipo ::= morale | ideologico | postapocalittico | spaziale | sensuale | animale | sesquipedale | _ ;
